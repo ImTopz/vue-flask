@@ -1,4 +1,6 @@
-# 1.基础
+# 全栈开发
+
+# 1.后端基础（python-flask）
 
 ```python
 from flask import Flask, render_template
@@ -93,6 +95,19 @@ if __name__ == '__main__':
 
 html代码解析:
 
+<form大标签 action表示输入表单后提取到的入口页面，表示提交的form表单会根据post的方法送到http://localhost:5000/result这个页面中。同时观察后端处理代码，后端检测了访问的方法，如果是POST的话，就获取表单并且把结果赋给result再return给result.html
+
+```
+<form action="form_action.asp" method="get">
+ <p>这里输名字: <input type="text" name="fname" /></p>
+ <p>接着输名字: <input type="text" name="lname" /></p>
+ <input type="submit" value="Submit" />
+</form>
+```
+
+比如说这里的话就会把页面送到form_action.asp页面。
 
 
-​	
+
+
+
